@@ -450,7 +450,7 @@ exxcellent.SuggestFieldSync = Core.extend(Echo.Sync.TextComponent, {
                     this._isValidSuggestUpdate = true;
                     self.searching = setTimeout(function () {
                         self._triggerServerFilter();
-                    }, 500);
+                    }, 100);
                 }
         }
 
