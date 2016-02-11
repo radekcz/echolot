@@ -448,6 +448,7 @@ exxcellent.SuggestFieldSync = Core.extend(Echo.Sync.TextComponent, {
                 if (currentLength >= defMinLength) {
                     clearTimeout(self.searching);
                     this._isValidSuggestUpdate = true;
+                    // set timeout to 100 = faster rendering suggest fields
                     self.searching = setTimeout(function () {
                         self._triggerServerFilter();
                     }, 100);
